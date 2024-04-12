@@ -1,5 +1,5 @@
 //-------------------------------------------Singleton ingenuo (hilo único)-------------------------
-public class Singleton {
+/*public class Singleton {
 private static Singleton instance;
     public String value;
 
@@ -19,7 +19,7 @@ private static Singleton instance;
         }
         return instance;
     }
-}
+}*/
 
 //---------------------------------------Singleton ingenuo (multihilo)-------------------------
 /*public final class Singleton {
@@ -44,7 +44,7 @@ private static Singleton instance;
     }
 }*/
 //-----------------------------Singleton con seguridad en los hilos y carga diferida---------------------
-/*public final class Singleton {
+public final class Singleton {
     // The field must be declared volatile so that double check lock would work
     // correctly.
     private static volatile Singleton instance;
@@ -79,4 +79,4 @@ private static Singleton instance;
             return instance;
         }
     }
-}*/
+}
